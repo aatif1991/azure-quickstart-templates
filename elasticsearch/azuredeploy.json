@@ -351,7 +351,7 @@
           "typeHandlerVersion": "1.4",
           "settings": {
             "fileUris": "[variables('windowsScripts')]",
-            "commandToExecute": "[concat('powershell.exe -File elasticsearch-windows-install.ps1 -elasticSearchVersion ', variables('esSettings').version,' -elasticClusterName ', variables('esSettings').clusterName,' -discoveryEndpoints ', variables('esSettings').discoveryHosts, ' -dataOnlyNode -installMarvel')]"
+            "commandToExecute": "[concat('powershell.exe -File elasticsearch-windows-install.ps1 -elasticSearchVersion ', variables('esSettings').version,' -elasticClusterName ', variables('esSettings').clusterName,' -discoveryEndpoints ', variables('esSettings').discoveryHosts, ' -dataOnlyNode -installMarvel -jmeterConfig')]"
           }
         }
       }
